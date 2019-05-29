@@ -7,6 +7,11 @@
              , company_no
              , department
 		  FROM department
+         WHERE 1=1
+        <if test="companyNo != null">
+            AND company_no = #{companyNo}
+        </if>
+          ORDER BY department_no DESC
 	</select>
 
 </mapper>
