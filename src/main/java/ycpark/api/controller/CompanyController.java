@@ -17,7 +17,7 @@ public class CompanyController {
     @Autowired
     CompanyService companyService;
 
-    @RequestMapping(value="", method= RequestMethod.GET)
+    @RequestMapping(value="", method=RequestMethod.GET)
     public ResponseEntity<?> getCompanyList(){
         HashMap<String, Object> result = new HashMap<>();
 
